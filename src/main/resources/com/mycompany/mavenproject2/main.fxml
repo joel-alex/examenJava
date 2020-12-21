@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.MainController">
+   <children>
+      <MenuBar layoutX="22.0" layoutY="28.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Modulo">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#marcaAction" text="Marca" />
+                  <MenuItem mnemonicParsing="false" onAction="#productoAction" text="Producto" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TabPane fx:id="tabPane" layoutX="27.0" layoutY="69.0" prefHeight="266.0" prefWidth="521.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>
